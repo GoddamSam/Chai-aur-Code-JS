@@ -29,7 +29,7 @@ let e1=null
 let f1=undefined
 
 console.log(Boolean(a1))
-console.log(Boolean(b1))
+console.log(Boolean(b1)) 
 console.log(Boolean(c1))
 console.log(Boolean(d1))
 console.log(Boolean(e1))
