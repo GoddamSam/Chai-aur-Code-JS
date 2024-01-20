@@ -1,0 +1,1 @@
+In this repository I shall practise my JS skills.
