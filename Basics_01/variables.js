@@ -24,4 +24,19 @@ var c=7
 
 //const types can only be declared and initialized once so easiest to work with
 
-console.log(a+" "+b+" "+c)
+
+
+//Operations-->
+
+console.log("1"+2+3)
+
+console.log(1+2+"3")
+
+console.log(('sam'*'sam')+" "+(NaN+1)+" "+(NaN+"Sam")+" "+(null+false))
+
+//boolean values are completel treated as 1 and 0 in operations while null is treated as 0
+
+//operating anything with undefined results in NaN
+
+//strings use "+" for concatenation but for other operators give NaN
+
