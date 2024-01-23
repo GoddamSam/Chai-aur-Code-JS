@@ -46,7 +46,7 @@ console.log(arr1);
 console.log(arr1.splice(1,3));
 console.log(arr1);
 
-//concat--> joins one array with other but returns a ne array
+//concat--> joins one array with other but returns a new array
 const arr2=arr.concat(arr1)
 console.log(arr2);
 
