@@ -1,3 +1,13 @@
+//parameters are the variables written in the function definition whereas arguments are the variables passed from outside the function when it is invoked or called
+
+function mySym(a,b){
+    return (a+b)
+}
+
+console.log(mySym(5,6));//11
+
+//in this function mySym--> a,b are the parameters and 5,6 are the arguments passed during function call
+
 //function declaration method 1-->
 
 function add(a,b){
