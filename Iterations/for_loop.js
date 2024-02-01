@@ -11,3 +11,4 @@ for(let index=0;index<5;index++)
 //break--> tranfers the control flow out of the loop skipping any statements after it
 
 //continue--> transfers the control flow to the next iterative cycle skipping all statements after it for the current cycle
+

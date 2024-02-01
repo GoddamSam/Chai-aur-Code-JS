@@ -23,7 +23,7 @@ console.log(`The states at index ${states} is:-${arr[states]}`);
 
 //for each--> It is a iterating method that is an array prototype provided by js for every array
 //the method has a callback function which doesn't have a name and it has the following parameters - values, indices and the array it is traversing
-
+//the forEach() method does not return any values i,e, undefined
 
 //method 1 --> callback fn declared using function keyword
 arr.forEach(function(states,ind,arr){
@@ -58,4 +58,5 @@ const arrOfObj=[
 arrOfObj.forEach((items)=>{
     console.log(items.language);
 })
-//foreach mathod can be used for iterating over objects and their properties as well in an array of objects
+//forEach mathod can be used for iterating over objects and their properties as well in an array of objects
+

@@ -1,6 +1,7 @@
 //map is an object which also stores key and value pairs but it is different from objects as map stores values in theor insertion order whereas objects store them in any order
 //maps can have any type of value in its key whereas objects can oly have strings or symbols as its key
 //length of map can easily be determined while for objects they have to be maintained manually
+//map also contains unique keys while object can contain duplicates
 
 const myMap=new Map()
 
