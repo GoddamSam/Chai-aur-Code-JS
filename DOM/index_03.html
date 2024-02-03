@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code </title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    
+</body>
+<script>
+    const div = document.createElement('div')//creating a div element
+    console.log(div);
+    div.className = "main"//setting the element's classname as main
+    div.id = Math.round(Math.random() * 10 + 1)//setting the id
+    div.setAttribute("title", "generated title")//setting the attributes
+    div.style.backgroundColor = "green"
+    div.style.padding = "12px"
+    div.innerText = "Chai aur code"
+    const addText = document.createTextNode("Chai aur code")
+    div.appendChild(addText)//we can add the text as attribute directly to the div node or we can also create a text node and append it as a child to the div node as parent...both ways the DOM structure remains same
+
+    document.body.appendChild(div)//whatever we have done above is in the memory apparently so in order to make it visible we have to append it to the overall DOM structure
+</script>
+</html>

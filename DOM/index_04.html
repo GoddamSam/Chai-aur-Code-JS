@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black ;color: #fff;">
+    <ul class="states-list">
+        <li class="Bihar">Bihar</li>
+    </ul>
+</body>
+<script>
+
+    //creating new eleement
+    function addState(stateName){//this is a less optimised way to add an element since adding the test content thorugh innerHTML or innerText makes the fetching of the reference and then overriding the value which is a lengthy process so this method not recommended for adding new elements
+        const newState=document.createElement('li')
+        newState.className='states'
+        newState.innerHTML=`${stateName}`
+        document.querySelector('.states-list').appendChild(newState)
+    }
+    addState('Kerala')
+    addState('Karnataka')
+    addState('Orissa')
+
+    function optiaddState(state){//this is amore optimised approach since we are creating a new text node and appending it to out new element node and the entire chain is appended to the overall DOM so the fetching of reference and overriding dosen't happen so more optiised process
+        const newState=document.createElement('li')
+        newState.className='states'
+        newState.appendChild(document.createTextNode(`${state}`))
+        document.querySelector('states_list').appendChild(newState)
+    }
+
+    addState('West Bengal')
+
+    //editing an existing element
+    function editState(newState){
+        const newTempState=document.querySelector('li:nth-child(4)')
+        const tempState=document.createElement('li')
+        tempState.className=`${newState}`
+        tempState.appendChild(document.createTextNode(`${newState}`))
+        newTempState.replaceWith(tempState)
+       
+    }
+
+    editState('Tamil Nadu')
+
+    //deleting an existing element
+    document.querySelector('li:last-child').remove()
+
+</script>
+</html>

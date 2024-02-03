@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Chai aur code</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <div class="parent">
+        <!-- this is a comment -->
+        <div class="day">Monday</div>
+        <!-- <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div> -->
+    </div>
+</body>
+<script>
+    const parent = document.querySelector('.parent')//returns the first node that matches the classname='parent'
+    // console.log(parent);--> root node just like in a tree
+    // console.log(parent.children);--> accessing the child node of the root node which is a nodelist having all the children of parent
+    // console.log(parent.children[1].innerHTML);--> child node can also be accessed thorugh indexing since nodelist is quite similar to array
+
+    // for (let i = 0; i < parent.children.length; i++) {
+    //      console.log(parent.children[i].innerHTML);
+        
+    // }
+    //parent.children[1].style.color = "orange"
+    // console.log(parent.firstElementChild);--> gets the first element type child of parent
+    // console.log(parent.lastElementChild);-->  gets the last element type child of parent
+
+    const dayOne = document.querySelector('.day')
+    console.log(dayOne);
+    //console.log(dayOne.parentElement);--> gets the parent node
+    //console.log(dayOne.nextElementSibling);--> gets the next child node of their parent
+
+    console.log("NODES: ", parent.childNodes);
+    
+</script>
+</html>
