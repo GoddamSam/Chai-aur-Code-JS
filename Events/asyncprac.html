@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>I am testing Async</h1>
+    <button id="stop">Stop</button>
+    
+</body>
+<script>
+    const heading=document.querySelector('h1');
+
+const change=setTimeout(changeHeading,2000);// setTimeOut() executes the task after a timeout interval provided in miliseconds and it actually returns a numeric identifier of the timeout which is used later to identify the timeout and clear it using clearTimeout
+            console.log(`${str} `+Date.now()+'  '+intervalId);
+
+function changeHeading(){
+    heading.innerHTML='The Async is tested';
+}
+
+document.getElementById('stop').addEventListener('click',()=>{
+    clearTimeout(change);
+})
+</script>
+</html>

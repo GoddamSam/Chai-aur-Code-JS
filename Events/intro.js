@@ -12,7 +12,17 @@
 
 //using addeventlisteners is best approach  to handle these types of events in modern browsers
 
-//types,timestamp,prevent default,target,to element,source element,currentTarget
+//type--> gives the type of the event as a string like 'click', 'load' or 'error'
+
+//timestamp--> gives the time in milliseconds between the origin time(instant at which the browser loads the HTML page or the page refreshed or the user clicks on a link or URL navigating to the page) and the instant the event occured
+
+//prevent default--> this method tells the browser that if the event(form submission, webpage redirecting from a link or URL) does not get handled explicitly then the default action should not take place
+
+//target--> it returns the reference of the object or element on which the event was fired or occured which may not be always the element to which event listener is attatched
+
+//currentTarget--> it also returns the reference of the object but to which the event listener was attatched which also might be different from the exact element to which the actual event was fired or occured
+
+//relatedTarget--> serves as an alternative for the target at which the event(mouse events) was fired
 
 //clientx/y--> gives the x and y coordinates relative to the client area where the event(mainly mouse events) occured and by client area I mean the available viewport(part of the website that is currently visible in the screen)
 

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unlimited Colors</title>
+</head>
+<body style="background-color: black;">
+    <h1 style="color: #fff;">Start should chane the background color at every second</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    let intervalId;
+
+    function random(min,max){
+        let num=Math.round(Math.random()*(max-min+1)+min);
+        return num;
+    }
+let display= function(){
+
+        
+        if(!intervalId)
+        intervalId=setInterval((str)=>{// setInterval helps to execute a peice of code again and again after the given interval in miliseconds and it actually returns a numeric identifier of the interval which is used later to identify the interval and clear it using clearInterval
+            
+            document.body.style=`background-color:rgb(${random(0,255)},${random(0,255)},${random(0,255)})`;
+        },1000)};
+
+    
+    document.getElementById('start').addEventListener('click',display)
+
+    
+    document.getElementById('stop').addEventListener('click',()=>{
+        clearInterval(intervalId);
+        intervalId=null;
+    })
+</script>
+</html>
