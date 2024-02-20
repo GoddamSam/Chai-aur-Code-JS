@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="height:100vh;display: grid;place-content: center;">
+    <table style="border-collapse: collapse;">
+        <thead>
+            <tr >
+                <th style="border: 2px double black;text-align: center;padding: 8px;">Key</th>
+                <th style="border: 2px double black;text-align: center;padding: 8px;">KeyCode</th>
+                <th style="border: 2px double black;text-align: center;padding: 8px;">Code</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr >
+                <td id="key" style="border: 2px double black;text-align: center;padding: 8px;"></td>
+                <td id="keycode" style="border: 2px double black;text-align: center;padding: 8px;"></td>
+                <td id="code" style="border: 2px double black;text-align: center;padding: 8px;"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+<script>
+    const key=document.getElementById('key');
+    const keycode=document.getElementById('keycode');
+    const code=document.getElementById('code');
+
+    window.addEventListener('keydown',(e)=>{
+
+        e.preventDefault();
+
+        key.innerHTML=`${e.key===' '?'Space':e.key}`;
+        keycode.innerHTML=`${e.keycode}`;
+        code.innerHTML=`${e.code}`;
+    })
+</script>
+</html>

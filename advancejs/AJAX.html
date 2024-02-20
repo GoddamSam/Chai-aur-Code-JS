@@ -1,0 +1,51 @@
+<!-- Asynchronous JavaScript and XML (Ajax, or AJAX) is a web development technique in which a web app fetches content from the server by making asynchronous HTTP requests, and uses the new content to update the relevant parts of the page without requiring a full page load. -->
+
+<!-- AJAX at the time of origin used XML since it provided a structured and formatted style of representing data for exchange and communication between servers and web pages but with time JSON(javascript object notation) was found to be more flexible and lightweight format so now data is exchanged in JSON format using xmlhttprequest object. -->
+
+<!-- Traditional (Non-AJAX) Approach:
+
+You click a link or submit a form.
+The browser sends a request to the server.
+The server processes the request and sends back a complete HTML page.
+The entire page is replaced with the new content, causing a full page refresh. -->
+
+<!-- AJAX Approach:
+
+You interact with a part of the page, for example, click a button.
+JavaScript makes an asynchronous request to the server in the background using technologies like XMLHttpRequest or the Fetch API.
+The server processes the request and sends back data (often in JSON or XML format).
+JavaScript dynamically updates only the specific part of the page with the received data, without reloading the entire page. -->
+
+<!-- HTTP Requests-> HTTP(Hyper Text Transfer Protocol) is a communication protocol that is used for communication on the Internet or World Wide Web and requests are messages that are sent by the client(browser) to the server demanding some action or some data to be retrieved and HTTP defines how the messages are structured or formatted for communication on the internet-->
+
+<!-- XMLHTTPRequest API-> It is an API that provides a way for client-side JavaScript code to make HTTP requests to a server. It includes methods and properties that allow developers to initiate and handle asynchronous requests, enabling dynamic updates on web pages without requiring a full page reload. -->
+
+<!-- XMLHTTPRequest prototype object-> It is a prototype that provides methods and properties for handling asynchronous requests to servers and we need to instantiate it in our program to access the methods and properties it gives access to. We call the XMLHTTPRequest() constructor to instantiate it and use that object for our operations. -->
+
+<!-- open(method, url, async): Initializes a request. Specifies the HTTP method (GET, POST, etc.), the URL of the resource to be requested, and whether the request should be asynchronous. -->
+
+<!-- send(data): Sends the request to the server. Optionally includes data, such as parameters or a request body, for POST requests. -->
+
+<!-- XMLHTTPRequest.readyState-> It is a property  that returns an integer indicating the state of the object or the client. The states are as follows:
+0	UNSENT	Client has been created. open() not called yet.
+1	OPENED	open() has been called.
+2	HEADERS_RECEIVED	send() has been called, and headers and status are available.
+3	LOADING	Downloading; responseText holds partial data.
+4	DONE	The operation is complete. -->
+
+<!-- readystatechange-> It  is an event in JavaScript associated with the XMLHttpRequest object. This event is fired whenever the readyState property of the XMLHttpRequest object changes, indicating a transition in the lifecycle of the HTTP request. -->
+
+<!-- status-> This property represents the HTTP status code of the response sent by the server.
+Values:
+2xx (OK): The request was successful.
+3xx (REDIRECT): The request requires further action to be completed.
+4xx (CLIENT ERROR): The request contains bad syntax or cannot be fulfilled.
+5xx (SERVER ERROR): The server failed to fulfill a valid request. -->
+
+<!-- responseText-> It returns the text received from a server following a request being sent as a string. -->
+
+<!-- responseXML-> It returns a document containing the HTML or XML retrieved by the request; or null if the request was unsuccessful, has not yet been sent, or if the data can't be parsed as XML or HTML. -->
+
+<!-- JSON.parse-> It converts the response text  from an XMLHttpRequest object into a JavaScript object. If the conversion is successful, it returns the resulting response as an object. -->
+
+<!-- console.log() is also not a part of core js and is a debugging tool  provided by browsers. It's used to output information from scripts to the console window. -->

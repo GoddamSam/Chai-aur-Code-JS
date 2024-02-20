@@ -1,5 +1,7 @@
 // DOM stands for Document Object Model. It is a programming interface for web documents, and it represents the structure of a document as a tree of objects. In the context of web development, the document typically refers to an HTML or XML document.
 
+//It is not a part of raw or core js which only has some basic loops, arithmetic operators, functions,etc... The methods and properties of DOM manipulation is provided by DOM API that is injected by the runtime environment i.e, browser or node for extended functionalities.
+
 // The DOM provides a way for programs (usually written in JavaScript) to interact with the structure, style, and content of HTML or XML documents. It allows scripts to dynamically update, add, or delete elements and attributes on a web page. The DOM also provides a standardized way for different programs and scripts to access and manipulate the content of a document.
 
 // Key points about the DOM:
